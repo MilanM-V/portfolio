@@ -1,0 +1,14 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    background-color: #0b0813;
+    color: #f1f5f9;
+    font-family: monospace, sans-serif;
+  }
+}
+
+dialog::backdrop {
+  background: rgba(5, 3, 10, 0.75);
+  backdrop-filter: blur(4px);
+}

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Test Tuile</title>
+    <link rel="stylesheet" href="./src/style.css" />
+  </head>
+  <body>
+    <!--Div du fond-->
+    <div class="bg-[#0b0813] text-white min-h-screen flex items-center justify-center p-6">
+      <!--Div tuile-->
+      <div id="card-bloom" class="w-80 p-6 rounded-xl bg-[#161024] border border-purple-500/30 cursor-pointer transition-all duration-300 hover:border-purple-400 hover:shadow-[0_0_25px_rgba(168,85,247,0.4)] hover:-translate-y-1">
+        <div class="w-100% bg-[#362068] -mx-6 -mt-6 px-6 py-2 rounded-t-xl border-b-2 border-[#6d50af]">
+          <span class="text-xs font-mono text-purple-400 ">_dev.project-01.py</span>
+        </div>
+        <h3 class="text-lg font-bold mt-2">Étude « Bloom »</h3>
+        
+        <p class="text-sm text-slate-400 mt-1">
+          Scoring prédictif BFC et ciblage de 924k profils.</br>...
+        </p>
+      </div>
+      <dialog id="modal-bloom" class=" m-auto place-items-center rounded-2xl bg-[#161024] border border-purple-500 text-white p-6 max-w-lg w-[90%] shadow-[0_0_50px_rgba(168,85,247,0.4)]">
+        <div class="flex justify-between items-center border-b border-purple-900/50 pb-3 mb-4">
+          <h3 class="text-xl font-bold text-purple-200">Étude « Bloom » — Détails</h3>
+          <button id="close-bloom" class="text-purple-400 hover:text-white font-mono cursor-pointer">[ FERMER X ]</button>
+        </div>
+
+        <div class=" space-y-3 text-sm text-slate-300">
+          <p><strong class="text-purple-300">Contexte :</strong> Implantation sur le marché test de Bourgogne-Franche-Comté.</p>
+          <p><strong class="text-purple-300">Méthodologie :</strong> Modélisation de 924 847 cibles et score sur 5 variables.</p>
+          <div class="pt-2">
+            <span class="text-xs bg-purple-950 border border-purple-500/40 text-purple-200 px-2.5 py-1 rounded-full">Python</span>
+            <span class="text-xs bg-purple-950 border border-purple-500/40 text-purple-200 px-2.5 py-1 rounded-full ml-2">Excel</span>
+          </div>
+        </div>
+      </dialog>
+    </div>
+
+  <script type="module" src="./src/main.js"></script>
+  </body>
+</html>
